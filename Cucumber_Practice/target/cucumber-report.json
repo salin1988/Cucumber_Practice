@@ -1,0 +1,167 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-04-08T11:49:11.721Z",
+        "line": 4,
+        "name": "Validate First Name field",
+        "description": "",
+        "id": "create-account-of-facebook;validate-first-name-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 788000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User need to be on facebook login page",
+            "match": {
+              "location": "com.basic.multiplescenarioSD.MultipleScenario.User_need_to_be_on_facebook_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1571000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters user \"Salin\" first name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Salin",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.multiplescenarioSD.MultipleScenario.User_enters_user_first_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2650000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User checks user \"Salin\" first name is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Salin",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.multiplescenarioSD.MultipleScenario.User_checks_user_first_name_is_present(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-08T11:49:11.742Z",
+        "line": 9,
+        "name": "Validate create user multiple fields",
+        "description": "",
+        "id": "create-account-of-facebook;validate-create-user-multiple-fields",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1337000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User need to be on facebook login page",
+            "match": {
+              "location": "com.basic.multiplescenarioSD.MultipleScenario.User_need_to_be_on_facebook_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2149000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enters user \"Salin\" first name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Salin",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.multiplescenarioSD.MultipleScenario.User_enters_user_first_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 671000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enters user \"Dalabehera\" surname",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dalabehera",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.multiplescenarioSD.MultipleScenario.User_enters_user_surname(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 732000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User checks user \"Salin\" first name is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Salin",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.multiplescenarioSD.MultipleScenario.User_checks_user_first_name_is_present(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1017000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User checks user \"Dalabehera\" last name is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dalabehera",
+                  "offset": 18
+                }
+              ],
+              "location": "com.basic.multiplescenarioSD.MultipleScenario.User_checks_user_last_name_is_present(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Create account of Facebook",
+    "description": "As a user u need to open facebook home page and do the validation",
+    "id": "create-account-of-facebook",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/com/basic/multiplescenarioFF/multiplescenariosFF.feature",
+    "tags": []
+  }
+]
