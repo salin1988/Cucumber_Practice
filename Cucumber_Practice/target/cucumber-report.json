@@ -1,158 +1,235 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-04-08T11:49:11.721Z",
-        "line": 4,
-        "name": "Validate First Name field",
+        "line": 5,
+        "name": "Common step",
         "description": "",
-        "id": "create-account-of-facebook;validate-first-name-field",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 788000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User need to be on facebook login page",
-            "match": {
-              "location": "com.basic.multiplescenarioSD.MultipleScenario.User_need_to_be_on_facebook_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1571000,
+              "duration": 207105000,
               "status": "passed"
             },
             "line": 6,
-            "name": "User enters user \"Salin\" first name",
+            "name": "User need to be on facebook login page",
             "match": {
-              "arguments": [
-                {
-                  "val": "Salin",
-                  "offset": 18
-                }
-              ],
-              "location": "com.basic.multiplescenarioSD.MultipleScenario.User_enters_user_first_name(java.lang.String)"
+              "location": "com.basic.dataTableSD.dataTable.User_need_to_be_on_facebook_login_page()"
             },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2650000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User checks user \"Salin\" first name is present",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Salin",
-                  "offset": 18
-                }
-              ],
-              "location": "com.basic.multiplescenarioSD.MultipleScenario.User_checks_user_first_name_is_present(java.lang.String)"
-            },
-            "keyword": "Then "
+            "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2022-04-08T11:49:11.742Z",
+        "start_timestamp": "2022-04-11T10:07:02.968Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12856000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.basic.dataTableSD.dataTable.beforeSetup()"
+            }
+          }
+        ],
         "line": 9,
         "name": "Validate create user multiple fields",
         "description": "",
         "id": "create-account-of-facebook;validate-create-user-multiple-fields",
+        "after": [
+          {
+            "result": {
+              "duration": 1372000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.basic.dataTableSD.dataTable.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1337000,
+              "duration": 13635000,
               "status": "passed"
             },
             "line": 10,
-            "name": "User need to be on facebook login page",
-            "match": {
-              "location": "com.basic.multiplescenarioSD.MultipleScenario.User_need_to_be_on_facebook_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2149000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "User enters user \"Salin\" first name",
+            "name": "User enters user \"Saraswati\" first name",
             "match": {
               "arguments": [
                 {
-                  "val": "Salin",
+                  "val": "Saraswati",
                   "offset": 18
                 }
               ],
-              "location": "com.basic.multiplescenarioSD.MultipleScenario.User_enters_user_first_name(java.lang.String)"
+              "location": "com.basic.dataTableSD.dataTable.User_enters_user_first_name(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 671000,
+              "duration": 2858000,
               "status": "passed"
             },
-            "line": 12,
-            "name": "User enters user \"Dalabehera\" surname",
+            "line": 11,
+            "name": "User enters user \"Dalabehera1\" surname",
             "match": {
               "arguments": [
                 {
-                  "val": "Dalabehera",
+                  "val": "Dalabehera1",
                   "offset": 18
                 }
               ],
-              "location": "com.basic.multiplescenarioSD.MultipleScenario.User_enters_user_surname(java.lang.String)"
+              "location": "com.basic.dataTableSD.dataTable.User_enters_user_surname(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 732000,
+              "duration": 10461000,
               "status": "passed"
             },
-            "line": 13,
-            "name": "User checks user \"Salin\" first name is present",
+            "line": 12,
+            "name": "User checks user \"Saraswati\" first name is present",
             "match": {
               "arguments": [
                 {
-                  "val": "Salin",
+                  "val": "Saraswati",
                   "offset": 18
                 }
               ],
-              "location": "com.basic.multiplescenarioSD.MultipleScenario.User_checks_user_first_name_is_present(java.lang.String)"
+              "location": "com.basic.dataTableSD.dataTable.User_checks_user_first_name_is_present(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1017000,
+              "duration": 2485000,
               "status": "passed"
             },
-            "line": 14,
-            "name": "User checks user \"Dalabehera\" last name is present",
+            "line": 13,
+            "name": "User checks user \"Dalabehera1\" last name is present",
             "match": {
               "arguments": [
                 {
-                  "val": "Dalabehera",
+                  "val": "Dalabehera1",
                   "offset": 18
                 }
               ],
-              "location": "com.basic.multiplescenarioSD.MultipleScenario.User_checks_user_last_name_is_present(java.lang.String)"
+              "location": "com.basic.dataTableSD.dataTable.User_checks_user_last_name_is_present(java.lang.String)"
             },
             "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Important"
+          },
+          {
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Common step",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1568000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User need to be on facebook login page",
+            "match": {
+              "location": "com.basic.dataTableSD.dataTable.User_need_to_be_on_facebook_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-11T10:07:03.597Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13067000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.basic.dataTableSD.dataTable.beforeSetup()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "DataTable example",
+        "description": "",
+        "id": "create-account-of-facebook;datatable-example",
+        "after": [
+          {
+            "result": {
+              "duration": 1315000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.basic.dataTableSD.dataTable.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21182000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Enter follwing data",
+            "match": {
+              "location": "com.basic.dataTableSD.dataTable.Enter_follwing_data(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userName",
+                  "userLastName"
+                ]
+              },
+              {
+                "cells": [
+                  "Salin",
+                  "Dalabehera"
+                ]
+              },
+              {
+                "cells": [
+                  "Saraswati",
+                  "Dalabehera"
+                ]
+              }
+            ],
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Important"
+          },
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "@Regression"
           }
         ]
       }
@@ -161,7 +238,16 @@
     "description": "As a user u need to open facebook home page and do the validation",
     "id": "create-account-of-facebook",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/com/basic/multiplescenarioFF/multiplescenariosFF.feature",
-    "tags": []
+    "uri": "file:src/test/resources/com/basic/dataTableFF/dataTableFF.feature",
+    "tags": [
+      {
+        "name": "@Important",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

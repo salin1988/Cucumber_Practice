@@ -13,8 +13,8 @@ import io.cucumber.junit.CucumberOptions;
 		glue={"com/basic/FirstFeatureFile"},
 								
 		plugin={"pretty",
-				"html:target/cucumber-htmlreport.html",
-				"json:target/cucumber-report.json",		
+				"html:target/cucumber-htmlreport2.html",
+				"json:target/cucumber-report2.json",		
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:target/Extent_report2.html"
 		}
 		

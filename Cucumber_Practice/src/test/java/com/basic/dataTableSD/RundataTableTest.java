@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		stepNotifications = true,
-		//publish=true,
+		//publish=false,
 		monochrome=true,
 		//dryRun=true,
 		tags="@Smoke",
@@ -16,8 +16,8 @@ import io.cucumber.junit.CucumberOptions;
 		glue={"com/basic/dataTableSD"},
 								
 		plugin={"pretty",
-				"html:target/cucumber-htmlreport.html",
-				"json:target/cucumber-report.json",
+				"html:target/cucumber-htmlreport4.html",
+				"json:target/cucumber-report4.json",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:target/Extent_report4.html"
 		}
 		

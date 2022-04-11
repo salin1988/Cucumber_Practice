@@ -15,8 +15,8 @@ import io.cucumber.junit.CucumberOptions;
 		glue={"com/basic/multiplescenarioSD"},
 								
 		plugin={"pretty",
-				"html:target/cucumber-htmlreport.html",
-				"json:target/cucumber-report.json",	
+				"html:target/cucumber-htmlreport3.html",
+				"json:target/cucumber-report3.json",	
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:target/Extent_report3.html"
 		}
 		

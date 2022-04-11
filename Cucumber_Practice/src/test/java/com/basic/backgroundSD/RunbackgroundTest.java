@@ -15,8 +15,8 @@ import io.cucumber.junit.CucumberOptions;
 		glue={"com/basic/backgroundSD"},
 								
 		plugin={"pretty",
-				"html:target/cucumber-htmlreport.html",
-				"json:target/cucumber-report.json",	
+				"html:target/cucumber-htmlreport1.html",
+				"json:target/cucumber-report1.json",	
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:target/Extent_report1.html"
 		}
 		
