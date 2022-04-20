@@ -12,19 +12,7 @@ import java.util.List;
 
 import org.junit.Assert;
 
-class Student {
-	Integer rollNo;
-	String name;
-	String lastname;
-	
-	public String getName() {
-		return name;
-	}
-	
-	public String getlastName() {
-		return lastname;
-	}
-}
+import com.Student;
 
 public class dataTable {
 	
@@ -39,12 +27,12 @@ public class dataTable {
 			
 	@Given("^User need to be on facebook login page$")
 	public void User_need_to_be_on_facebook_login_page() {
-		stu.rollNo = 100;
+		stu.setrollNo(100);
 	}
 
 	@When("^User enters user \"([^\"]*)\" first name$")
 	public void User_enters_user_first_name(String userName ) {
-		stu.name = userName;
+		stu.setName(userName);
 			
 	}
 	
@@ -58,7 +46,7 @@ public class dataTable {
 	@And("^User enters user \"([^\"]*)\" surname$")
 	public void User_enters_user_surname(String lastName)
 	{
-		stu.lastname = lastName;
+		stu.setlastName(lastName);
 	}
 	
 	@Then("^User checks user \"([^\"]*)\" last name is present$")

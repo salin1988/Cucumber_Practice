@@ -6,18 +6,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-class Student {
-	String name;
-	String lastname;
-	
-	public String getName() {
-		return name;
-	}
-	
-	public String getlastName() {
-		return lastname;
-	}
-}
+import com.Student;
+
 
 public class MultipleScenario {
 	
@@ -30,7 +20,7 @@ public class MultipleScenario {
 
 	@When("^User enters user \"([^\"]*)\" first name$")
 	public void User_enters_user_first_name(String userName ) {
-		stu.name = userName;
+		stu.setName(userName);
 			
 	}
 	
@@ -44,7 +34,7 @@ public class MultipleScenario {
 	@And("^User enters user \"([^\"]*)\" surname$")
 	public void User_enters_user_surname(String lastName)
 	{
-		stu.lastname = lastName;
+		stu.setlastName(lastName);
 	}
 	
 	@Then("^User checks user \"([^\"]*)\" last name is present$")

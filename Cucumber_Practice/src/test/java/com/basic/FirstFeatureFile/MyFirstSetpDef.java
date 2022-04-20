@@ -5,13 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-class Student {
-	String name;
-	
-	public String getName() {
-		return name;
-	}
-}
+import com.Student;
 
 public class MyFirstSetpDef {
 	
@@ -24,7 +18,7 @@ public class MyFirstSetpDef {
 
 	@When("^User enters user first name$")
 	public void User_enters_user_first_name() {
-		stu.name = "Salin";
+		stu.setName("Salin");
 			
 	}
 	
